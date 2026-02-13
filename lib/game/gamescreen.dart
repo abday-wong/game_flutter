@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Gamescreen extends StatefulWidget {
-  const Gamescreen({super.key});
+class GameScreen extends StatefulWidget {
+  const GameScreen({super.key});
 
   @override
-  State<Gamescreen> createState() => _GamescreenState();
+  State<GameScreen> createState() => _GamescreenState();
 }
 
-class _GamescreenState extends State<Gamescreen> {
+class _GamescreenState extends State<GameScreen> {
   final ValueNotifier<int> Counter = ValueNotifier(1);
 
   @override
