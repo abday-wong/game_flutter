@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
 
-
-class GameScreen extends StatefulWidget {
-  const GameScreen({super.key});
+class Gamescreen extends StatefulWidget {
+  const Gamescreen({super.key});
 
   @override
-  State<GameScreen> createState() => _GameScreenState();
+  State<Gamescreen> createState() => _GamescreenState();
 }
 
-class _GameScreenState extends State<GameScreen> {
+class _GamescreenState extends State<Gamescreen> {
   @override
-  void initState() {
-    super.initState();
-  }
-}
-
-@override 
-Widget build(BuildContext context) {
-  return Scaffold(
-    body: Stack(
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
       children: [
         Positioned(
           top: 50,
@@ -40,5 +33,6 @@ Widget build(BuildContext context) {
         )
       ],
     ),
-  );
+    );
+  }
 }
