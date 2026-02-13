@@ -28,7 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  flame: ^1.16.0
+  flame: ^1.17.0
   flame_audio: ^2.1.6
   flutter:
     sdk: flutter
