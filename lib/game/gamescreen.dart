@@ -9,6 +9,11 @@ class Gamescreen extends StatefulWidget {
 
 class _GamescreenState extends State<Gamescreen> {
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -30,6 +35,26 @@ class _GamescreenState extends State<Gamescreen> {
               ),
             ),
           ),
+        ),
+        Positioned(
+          top: 50,
+          right: 20,
+          child: Row(
+            children: [
+              IconButton(
+                icon: const Icon(Icons.music_note, color: Colors.black),
+                onPressed: () {
+                  // Handle volume up action
+                },
+              ),
+              IconButton(
+                icon: const Icon(Icons.volume_up),
+                onPressed: () {
+                  // Handle volume off action
+                },
+              ),
+            ],
+          )
         )
       ],
     ),
