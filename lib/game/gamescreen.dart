@@ -46,7 +46,7 @@ class _GamescreenState extends State<GameScreen> {
                       },
                     ),
                   ),
-                ), // ← ini yang tadi kurang
+                ), 
             
                 Positioned(
                   top: 50,
@@ -71,6 +71,16 @@ class _GamescreenState extends State<GameScreen> {
               ],
             ),
           ),
+          Padding(
+    padding: const EdgeInsets.all(16),
+    child: ElevatedButton(
+      onPressed: () {
+        Counter.value++;
+      },
+      child: const Text("Tambah Score"),
+    ),
+ ),
+ // posisi paling bawah pada widget array column 
         ],
       ),
     );
