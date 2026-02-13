@@ -28,11 +28,15 @@ class _GamescreenState extends State<Gamescreen> {
               color: Colors.white.withOpacity(0.7),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: const Text(
-              'Score: 1',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+            child: ValueListenableBuilder<int>(
+              valueListenable: Counter,
+              builder: (context, score, child) => Text(
+                'Score: $score',
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
               ),
             ),
           ),
