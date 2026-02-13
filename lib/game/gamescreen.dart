@@ -1,23 +1,44 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+
+class GameScreen extends StatefulWidget {
+  const GameScreen({super.key});
+
+  @override
+  State<GameScreen> createState() => _GameScreenState();
 }
 
-class MyApp extends StatelessWidget {
+class _GameScreenState extends State<GameScreen> {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(title: 'Fruit Catcher Game', home: const GameScreen());
+  void initState() {
+    super.initState();
   }
 }
 
-class GameScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Game akan ditampilkan disini'),
-      ),
-    );
-  }
+@override 
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: Stack(
+      children: [
+        Positioned(
+          top: 50,
+          left: 20,
+          child: Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.7),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: const Text(
+              'Score: 1',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        )
+      ],
+    ),
+  );
 }
