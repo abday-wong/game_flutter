@@ -1,5 +1,6 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:game_fruit_catcher/game/managers/audio_manager.dart';
 
 class FruitCatcherGame extends FlameGame {
   @override
