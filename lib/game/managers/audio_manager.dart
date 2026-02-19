@@ -9,7 +9,7 @@ class AudioManager {
   bool _isMusicEnabled = true;
   bool _isSfxEnabled = true;
 
-  double _musicVolume = 0.7;
+  double _musicVolume = 1.0;
   double _sfxVolume = 1.0;
 
   // Getters
@@ -39,7 +39,7 @@ class AudioManager {
       try {
         FlameAudio.bgm.play(
           'music/bgm.mp3',
-          volume: _musicVolume,
+          volume: 1.0,
         );
       } catch (e) {
         print('Error playing background music: $e');
